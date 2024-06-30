@@ -39,7 +39,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Login">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
@@ -49,8 +49,8 @@
           </font>
         </Label>
             <ImageView fitHeight="400.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="btn_login" layoutX="401.0" layoutY="317.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="104.0" text="Login" />
-            <Button fx:id="btn_login1" layoutX="512.0" layoutY="317.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="104.0" text="Sign-up" />
+            <Button fx:id="btn_login" layoutX="401.0" layoutY="317.0" mnemonicParsing="false" onAction="#inciar" prefHeight="36.0" prefWidth="104.0" text="Login" />
+            <Button fx:id="btn_registar" layoutX="512.0" layoutY="317.0" mnemonicParsing="false" onAction="#registrarse" prefHeight="36.0" prefWidth="104.0" text="Registrarse" />
       </children>
     </AnchorPane>
   </children>
