@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -13,18 +14,13 @@ import javafx.stage.Stage;
 public class Login extends Application {
 
     @FXML
-    private Button btn_login;
+    private AnchorPane anchor_login;
 
     @FXML
-    private Button btn_registar;
+    private Button btn_iniciar;
 
     @FXML
     void inciar(ActionEvent event) {
-
-    }
-
-    @FXML
-    void registrarse(ActionEvent event) {
 
     }
     
