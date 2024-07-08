@@ -16,4 +16,6 @@ public class Game {
     @FXML
     private Label lbl_nombre;
 
+    
+
 }

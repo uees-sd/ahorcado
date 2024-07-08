@@ -21,16 +21,29 @@ public class Login extends Application {
 
     @FXML
     void inciar(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Login.class.getResource("/vista/modo.fxml"));
+            Pane ventana = (Pane) loader.load();
+            
+            Scene scene = new Scene(ventana);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+
+            Stage myStage = (Stage)this.btn_iniciar.getScene().getWindow();
+            myStage.close();
+            
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        
 
     }
     
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        /*StackPane root = new StackPane();
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 800, 600));
-        primaryStage.show();*/
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Login.class.getResource("/vista/login.fxml"));
         Pane ventana = (Pane) loader.load();

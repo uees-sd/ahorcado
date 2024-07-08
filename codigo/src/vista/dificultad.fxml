@@ -22,9 +22,9 @@
                   <Image url="@../dificultad.png" />
                </image>
             </ImageView>
-            <Button fx:id="btn_facil" layoutX="70.0" layoutY="177.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" text="FÁCIL" />
-            <Button fx:id="btn_medio" layoutX="220.0" layoutY="250.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" text="MEDIO" />
-            <Button fx:id="btn_dificil" layoutX="373.0" layoutY="319.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="139.0" text="DIFÍCIL" />
+            <Button fx:id="btn_facil" layoutX="70.0" layoutY="177.0" mnemonicParsing="false" onAction="#gameFacil" prefHeight="53.0" prefWidth="139.0" text="FÁCIL" />
+            <Button fx:id="btn_medio" layoutX="220.0" layoutY="250.0" mnemonicParsing="false" onAction="#gameMedio" prefHeight="53.0" prefWidth="139.0" text="MEDIO" />
+            <Button fx:id="btn_dificil" layoutX="373.0" layoutY="319.0" mnemonicParsing="false" onAction="#gameDificil" prefHeight="53.0" prefWidth="139.0" text="DIFÍCIL" />
          </children>
       </AnchorPane>
    </children>
