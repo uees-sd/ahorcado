@@ -1,47 +1,47 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Login",
-            "request": "launch",
-            "mainClass": "Login",
-            "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
-        },
-        {
-            "type": "java",
-            "name": "Login",
-            "request": "launch",
-            "mainClass": "controlador.Login",
-            "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
-        },
-        {
-            "type": "java",
-            "name": "App",
-            "request": "launch",
-            "mainClass": "modelo.App",
-            "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
-        },
-        {
-            "type": "java",
-            "name": "Login",
-            "request": "launch",
-            "mainClass": "modelo.Login",
-            "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path C:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib --add-modules=javafx.controls,javafx.fxml"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "Login",
+      "projectName": "ahorcado_b2ee93e5",
+      "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "controlador.Login",
+      "projectName": "ahorcado_b2ee93e5",
+      "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "modelo.App",
+      "projectName": "ahorcado_b2ee93e5",
+      "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+    },
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "modelo.Login",
+      "projectName": "ahorcado_b2ee93e5",
+      "vmArgs": "--module-path C:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib --add-modules=javafx.controls,javafx.fxml"
+    }
+  ]
 }
