@@ -13,49 +13,49 @@ import javafx.stage.Stage;
 
 public class Login extends Application {
 
-    @FXML
-    private AnchorPane anchor_login;
+	@FXML
+	private AnchorPane anchor_login;
 
-    @FXML
-    private Button btn_iniciar;
+	@FXML
+	private Button btn_iniciar;
 
-    @FXML
-    void inciar(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Login.class.getResource("/vista/modo.fxml"));
-            Pane ventana = (Pane) loader.load();
-            
-            Scene scene = new Scene(ventana);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
+	@FXML
+	void inciar(ActionEvent event) {
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Login.class.getResource("/vista/modo.fxml"));
+			Pane ventana = (Pane) loader.load();
 
-            Stage myStage = (Stage)this.btn_iniciar.getScene().getWindow();
-            myStage.close();
-            
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-        
+			Scene scene = new Scene(ventana);
+			Stage stage = new Stage();
+			stage.setScene(scene);
+			stage.show();
 
-    }
-    
+			Stage myStage = (Stage) this.btn_iniciar.getScene().getWindow();
+			myStage.close();
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Login.class.getResource("/vista/login.fxml"));
-        Pane ventana = (Pane) loader.load();
-        
-        Scene scene = new Scene(ventana);
-        primaryStage.setScene(scene);
-        primaryStage.show();
-        
-    }
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 
-    
-    public static void main(String[] args) throws Exception {
-        launch(args);
-    }
+
+	}
+
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Login.class.getResource("/vista/login.fxml"));
+		Pane ventana = (Pane) loader.load();
+
+		Scene scene = new Scene(ventana);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+
+	}
+
+
+	public static void main(String[] args) throws Exception {
+		launch(args);
+	}
 }
