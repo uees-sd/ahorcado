@@ -5,7 +5,7 @@ import javafx.scene.control.ListView;
 
 public class Puntaje {
 
-	@FXML
-	private ListView<?> lst_jugadores;
+    @FXML
+    private ListView<?> lst_jugadores;
 
 }
