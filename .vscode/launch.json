@@ -6,10 +6,19 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Login",
+            "request": "launch",
+            "mainClass": "controlador.Login",
+            "projectName": "ahorcado_5f3059da",
+            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
             "name": "Game",
             "request": "launch",
             "mainClass": "controlador.Game",
-            "projectName": "ahorcado_b2ee93e5"
+            "projectName": "ahorcado_b2ee93e5",
+            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
