@@ -10,7 +10,7 @@
             "request": "launch",
             "mainClass": "controlador.Login",
             "projectName": "ahorcado_5f3059da",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -18,7 +18,7 @@
             "request": "launch",
             "mainClass": "controlador.Game",
             "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -26,7 +26,7 @@
             "request": "launch",
             "mainClass": "Login",
             "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -34,7 +34,7 @@
             "request": "launch",
             "mainClass": "controlador.Login",
             "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -42,14 +42,14 @@
             "request": "launch",
             "mainClass": "modelo.App",
             "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "vmArgs": "--module-path \"c:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
@@ -57,7 +57,7 @@
             "request": "launch",
             "mainClass": "modelo.Login",
             "projectName": "ahorcado_b2ee93e5",
-            "vmArgs": "--module-path C:/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib --add-modules=javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"/openjfx-22.0.1_windows-x64_bin-sdk/javafx-sdk-22.0.1/lib\" --add-modules=javafx.controls,javafx.fxml"
         }
     ]
 }
