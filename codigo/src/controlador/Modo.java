@@ -5,9 +5,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import modelo.Servidor;
 
 public class Modo {
 
@@ -30,13 +32,25 @@ public class Modo {
     private Button btn_versus;
 
     @FXML
-    void generoNina(ActionEvent event) {
+    private TextField textUnirPuerto;
 
+    @FXML
+    private TextField txtNombre;
+
+    private String genero;
+
+    public Dificultad nivel;
+
+    @FXML
+    void generoNina(ActionEvent event) {
+        this.genero="nina";
+        System.out.println("genero: "+this.genero);
     }
 
     @FXML
     void generoNino(ActionEvent event) {
-
+        this.genero="nino";
+        System.out.println("genero: "+this.genero);
     }
 
     @FXML
@@ -63,6 +77,9 @@ public class Modo {
 
             Dificultad nivel = loader.getController();
             nivel.setModo(modo);
+            nivel.setGenero(genero);
+            nivel.setNombre(this.txtNombre.getText());
+            nivel.setPuerto(Integer.parseInt(this.textUnirPuerto.getText()));
             
             Scene scene = new Scene(ventana);
             Stage stage = new Stage();
@@ -71,12 +88,14 @@ public class Modo {
 
             Stage myStage = (Stage)this.btn_solo.getScene().getWindow();
             myStage.close();
-
-            
             
         } catch (Exception e) {
             // TODO: handle exception
         }
+    }
+
+    public Modo(){
+        
     }
 
 }

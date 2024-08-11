@@ -14,9 +14,9 @@ public class Ahorcado {
         this.nivel=nivel;
     }
 
-    public String[] compararLetra(char letra, String palabra, int vidas, int numPalabra, String labelPalabra){
+    public String[] compararLetra(char letra, String palabra, int vidas, int numPalabra, String labelPalabra, int conteo){
         String[] respuesta={"",""};
-        respuesta = procesoComparar(letra, palabra, vidas, numPalabra, labelPalabra);
+        respuesta = procesoComparar(letra, palabra, vidas, numPalabra, labelPalabra, conteo);
         return respuesta;
     }
 
@@ -34,9 +34,9 @@ public class Ahorcado {
         return respuesta=convertirString(palabraGuiones);
     }
 
-    public String[] procesoComparar(char letra, String palabra, int vidas, int numPalabra, String labelPalabra){
+    public String[] procesoComparar(char letra, String palabra, int vidas, int numPalabra, String labelPalabra, int conteo){
         boolean validacion= false;
-        String[] respuesta={"",""};
+        String[] respuesta={"","",""};
         System.out.println("entro al modo facil");
         System.out.println("palabra secreta es: "+palabra);
 
@@ -51,6 +51,7 @@ public class Ahorcado {
                 if (palabra.charAt(k)==letra) {
                     palabraGuiones[k]=letra;
                     validacion= true;
+                    conteo++;
                 }
             }
             labelPalabra= convertirString(palabraGuiones);
@@ -61,6 +62,7 @@ public class Ahorcado {
         }
         respuesta[0]= Integer.toString(vidas);
         respuesta[1]=labelPalabra;
+        respuesta[2]=Integer.toString(conteo);
         return respuesta;
     }
     

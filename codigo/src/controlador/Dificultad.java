@@ -25,6 +25,10 @@ public class Dificultad {
     private Button btn_medio;
 
     String modo;
+    String genero;
+    int puerto;
+
+    private String nombre;
 
     public Dificultad(){
 
@@ -33,25 +37,40 @@ public class Dificultad {
     @FXML
     void gameFacil(ActionEvent event) {
         String [] palabras = {"caballo", "paraguas", "consola"};
+        String [] pista ={
+            "Animal que montan los vaqueros.",
+            "Se usa en días de lluvia cuando sales.",
+            "Lo utilizas para jugar videojuegos en la TV."
+        };
         int vidas = 5;
-        enviarNivel("facil", palabras, vidas);
+        enviarNivel("facil", palabras, vidas,pista);
     }
 
     @FXML
     void gameMedio(ActionEvent event) {
         String [] palabras = {"paralelo", "academia", "ordenador"};
+        String [] pista ={
+            "Dos lineas juntas que no se tocan van en...",
+            "Sinónimo de institución educativa.",
+            "Se utiliza para trabajar o jugar en oficinas."
+        };
         int vidas = 4;
-        enviarNivel("facil", palabras, vidas);
+        enviarNivel("medio", palabras, vidas,pista);
     }
 
     @FXML
     void gameDificil(ActionEvent event) {
         String [] palabras = {"Parangaracutirimicuaro", "desoxirribonucleico", "anticonstitucionalidad"};
+        String [] pista ={
+            "Volcan mexicano pequeño.",
+            "Ácido nucleico que contiene las instrucciones genéticas.",
+            "Cualidad de inconstitucional."
+        };
         int vidas = 3;
-        enviarNivel("facil", palabras, vidas);
+        enviarNivel("dificil", palabras, vidas,pista);
     }
 
-    public void enviarNivel(String nivel, String[] palabras, int vidas){
+    public void enviarNivel(String nivel, String[] palabras, int vidas, String[] pista){
         try {
 
             
@@ -65,7 +84,13 @@ public class Dificultad {
             game.setModo(modo);
             game.setPalabras(palabras);
             game.setVidas(vidas);
+            game.setVidasOriginales(vidas);
             game.setLblPalabra(ahorcado.palabraAGuionesAPalabra(palabras[0]));
+            game.setGenero(this.genero);
+            game.setNombre(this.nombre);
+            game.setPuerto(this.puerto);
+            game.setPista(pista);
+            game.setLblPista(pista[0]);
 
             Scene scene = new Scene(ventana);
             Stage stage = new Stage();
@@ -92,6 +117,19 @@ public class Dificultad {
 
     public void setModo(String modo){
         this.modo=modo;
+    }
+
+    public void setGenero(String genero) {
+        this.genero=genero;
+        System.out.println("genero2: "+this.genero);
+    }
+
+    public void setNombre(String text) {
+        this.nombre=text;
+    }
+
+    public void setPuerto(int puerto){
+        this.puerto=puerto;
     }
 
 }
